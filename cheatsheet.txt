@@ -1,0 +1,735 @@
+How to access the labs 
+
+https://labs.vinsys.com
+
+http://lab.vinsys.com
+
+
+For Scala: 
+Path and Classpath 
+scala is in your PATH
+
+
+1. Intellij 
+2. Scala REPL 
+3. Scala in your path 
+4. java
+
+
+
+GAV  (Groupid / Artifactid / Version )
+
+pom.xml ---> 
+	<dependency> 
+		<groupid>mysql</groupid>
+		<artificatid>jdbc</artifactid>
+		<version>8.0.5</version>
+	</dependency>
+
+
+
+
+how to define a function 
+
+def <functionName>(<varName>:<varType>, <varn>:<varnType>) : <returnType> = {
+	
+	// if return type then the last expression/statement must be a valid return
+	// value 
+}
+
+your custome defined functions and 
+there overiiden functions 
+
+
+
+
+
+// a normal object   defined 
+// this is a single ton 
+// this is a global instance 
+// scala does nto support static so 
+// everything static required for scala has go in a object 
+// main method // by default needs to be static and hence it needs defined 
+// in the object and not in the class 
+// a object can have a companion class // Non Static things will go in the class 
+// static things will go in the object // 
+// in the same file i will write a class and an object this becomes 
+// companion ship in scala 
+object  <nameoftheobject>  {
+	
+
+
+}
+
+
+if the object class extends App
+object MyObject extends App {
+	
+	// every statement written in the Object is direclty executed 
+	// like a main method and you dont need a seperate main method 
+}
+
+
+1. Define a HelloWorld.scala 
+2. Define a object HelloWorld 
+3. Define a main Method 
+4. Print a statement 
+5. Run the class  // this class is runnbale because of the main method
+-------------------------------------------------------------------------------
+
+
+
+scalac // compiler 
+scala  //  a repl + a executor 
+
+scala has objects and clasess and scripts 
+object and classes can be compiled 
+
+Object is a singleton and can container a Main Method 
+Object can extend App if it extends app then it simply runs all the code in the body 
+
+you can define a function : 
+def fun(arg:type, argn:type): ReturnType = {
+	
+	return expression ; 
+}
+
+Objects are used for static functionalities --> 
+Classes are used for  the dynamic invocation 
+
+val == are immutable 
+var === are mutable 
+
+SCala has type inference 
+val a = 10;  
+a is now if type int (i cannot change the type or value of the val )
+
+var a= 10;  
+a is now type int (i can change value but not the type )
+
+Function can be called by named parameters 
+function can have default values 
+function can be nested if required to be resued withing a function 
+
+There is a anonymous function 
+
+Scala is functional 
+
+scala does not require the standards call like java 
+	a.method(param)
+	a method param 
+
+
+
+Objects : Singleton 
+Main Methods 
+App 
+Functions 
+Function with Params 
+Function with Default Values 
+function with params with name calls 
+
+
+Class : classes need to be instantiated 
+		classes can have constrcutors 
+		classes can have it own variables and values 
+		classes can be called from objects or other classes
+
+
+
+To check you code in git 
+
+1. You need to first intialize the git local repository 
+	you should be in the project folder 
+	git init 
+
+2.  git add * 
+
+3.  git commit * -m "Some Message"
+
+4.  git remote add origin https://github.com/nileshdevdas/cognizantscala.git 
+
+5.  git push origin master 
+
+
+https://github.com/nileshdevdas/cognizantscala
+
+
+
+---------------------------------------------------------------------------
+1. Environment
+2. Pace
+3. Access the code 
+4. ppt and the notes :-
+
+Programming with scala : 
+Collection Scala 
+Functional Programming 
+Loops / Foreach Function /Fold / Map Functions 
+Lambda / Closure 
+File IO 
+Thread / Concurrencies 
+Spark installation 
+Spark Basic 
+
+me : nilesh.devdas@vinsys.com 
+support : sidharth@vinsys.com 
+co-ordination : kapil.kulkarni@vinsys.com
+
+
+Day -2 Scala Spark (Scala Continued...... )
+
+Scala CLI : REPL 
+Scala Scripts : 
+Scala Object (SingleTon) (Scala Does not support the feature static --> )
+Scala is 100 % Object
+Scala Support Methods / Functions 
+Scala Support compilation 
+Scala Support Direct Script Running 
+Scala Support Object Orientation (Overloading , Overiding)
+Scala Has Classes 
+Scala has collections 
+Scala finall compiled output is a class (Byte Code in java)
+Scala promotes immutability by virtue of using val (Vals are immutable)
+Scala has mutable elements var -> whos values can be changed. 
+Scala coding We can use REPL 
+Scala Coding Text file 
+Scala coding Intellij 
+Scala is available freely to download 
+Scala supports 
+Spark runs on scala  (Primary Objective)
+
+
+1. scala supports loops 
+	do {
+
+	}while()
+
+2.  for()
+	construct for the for 
+	for(var <- Range )
+	//eg.  for(var <-  1 to 100){
+
+	}
+
+3.  if()
+
+4.  Support overloading // what is overloading /// we dont need a class/object 
+	prove overloading because in scala finally a script also is a single object 
+
+	add(x:Int)
+	{
+
+	}
+
+	add(y:Double){
+
+	}
+
+5. Sclass Object extends App --> no main Method Required  
+
+6.  lazy vals -->  Allow you to do the assignment at a later stage 
+	lazy  val abc = value ; the value will be realized only when you 
+	// woul access the variable abc ; till then its just not assigned, 
+
+7.  Smart Strings 
+	Strings can be formatted 
+	Strings can be interpolated 
+	Strings can be smart 
+	Smart String have more functionality then an regular string 
+-------------------------------------------------------------------------------
+Scala  Play Framework (MVC)// UI, UI Basc Model View Controllers 
+Scala  Akka Framework (Actor) Concurrency
+Scala  Lift 
+Scala  Sinatra 
+------------------------------------------------------------------------------
+
+https://github.com/nileshdevdas/scaladay2.git
+// code snippets are available here 
+
+------------------------------------------------------------------------------
+We have seen 
+
+4 Type of collections 
+
+List();  // ordered , allows duplicates , linked and immutable 
+			// you can retrieve content with index 
+Set();   // unordered , no duplicates, non linked  and is more of
+			retriving content with index not possible here you need make 
+			a loop of compare --> if the item exist  set()//  
+Map(); 	 //  name value keypairs which wil allow to do the  storage against 			keys 
+			data can be retrieved by keys 
+
+
+Tuple(); 	 Collection of differnet type ideally to note the user that this 
+			a tuple and not a generic data type 
+
+All of them have common functional aspects 
+	a) ++ for 2 collections 
+ 	b) take 
+ 	c) isEmpty 
+ 	d) takeRight 
+ 	f) min 
+ 	g) max 
+
+ Whats a smart string """ xxxxxx """ 
+
+ Advantages /// stripMargin 
+ 			/// endless lines of strings the way iwant 
+
+ 			.stripMargin 
+ 			we can have placehodler 
+ 						Any
+ 				         |
+ 					   AnyVal
+ 					     |
+ --------------------------------------------------
+  |	      |		 |	 |	  |     |    |    |       |	 	
+Double  Float  Long Int Short Byte Unit Boolean Char
+
+					
+						Nothing 
+
+		   Any	
+		   |
+		 AnyRef 
+		   |
+  ---------------------
+  |       |     |     |
+List   Option  Set YouClases 
+
+			Null
+
+----------------------------------------------------------------------------
+Scala Class
+Scala Object 
+Scala Scripts 
+Scala Val / Var 
+Scala Lazy 
+
+Traits are used as interface 
+a class can extend many traits --> extends and with 
+traits are pure for type and variable sharing across the classes 
+Traits cannot have contstructors 
+Traits are generly used for Generics and type mapping 
+
+
+
+Companions : 
+
+A Class and object having the same name 
+This case allows me to access methods and variables 
+declared in the object by ClassName.xxxx 
+Visually create and effect of accessing the data like static 
+i am using Object BankApp and accesing the single information 
+where as visuall it looks like static because my className 
+is also This combination of defining a Corresponding Object 
+with the same of the class in scala is known Companion Object 
+
+------------------------------------------------------------
+Scala Scripts 
+Scala Classes 
+Scala Objects 
+Scala Traits 
+Scala Companions 
+Scala Functions 
+Scala Val 
+Scala Vars 
+Scala main 
+Scala App 
+Scala Constructors 
+Scala Collections List, Set,Map , Range, Array, Tuple
+Scala Common functions over collection min, max, take, takeRight, 
+Scala Loop do While , For Loops 
+Scala Closure , anonymous functions 
+Scala String // String.format 
+Scala Smart String // """, """ striping 
+Scala Smart String interpolation f, s % ${}
+Scala for using scala Repl , and using Scala Scritps 
+
+i am back 
+
+
+
+
+
+interface {}
+
+contract first
+
+has a  and is a relations 
+
+Elephant is a Animal 
+Cat is Animal 
+
+general behavior and general attributes between the clasee 
+
+class Elephant{}
+
+class Cat{}
+
+
+var mypet:Animal = new Elephant(); 
+how would evolve a generic type ?
+
+a) would subclass ---> i cannot have one single class extend multiple classes 
+One class extends another class (multiple inheritence )
+
+Elephant is a Animal but its also Mammal 
+Frog  is Animal is Amphibian 
+
+How to manage Generic Type mapping in this case : 
+
+Trait comes to rescue 
+
+trait  Animal {
+		/// 
+}
+
+
+trait  Mammal {
+	//// 
+}
+
+
+class Elephant extends Animal with Mammal {
+	/// features from animal 
+	/// feature from mammal 
+	/// extra elephant features 
+}
+
+
+var a:Animal  = getAnimal("type"); ///Elephant
+a.allFeatures 
+
+
+var b:Mammal  = getMammal("type"); // Elephant
+
+var c:Elehant   = new Elephant();
+
+
+Left hand Side  = Right Hand Side 
+
+var b:Mammal  = AfricanElephant(); 
+
+
+
+------------------------------------------------------------------------------
+Maven and SBT architeture 
+
+1. Project build environment / Automation / DevOps 
+
+
+0. Structure management 
+	
+1. Dependency Management  // all dendency  (GAV) 
+				Coordinates ? 
+	
+	
+2.  Compilation  strategy 
+3. Unit Testing --> 
+4. Packaging ===> jar/war/ zip / 
+5. Document Generation  // javadoc , html , source 
+6. Publishing /Staging /Deploying  // in case local repo
+7. Stats (Statistics)
+
+i get ready made projects : 
+|----src
+		|---main 
+			  |---- scala 
+			  			| your package 
+			  					|---- your code 
+
+		|----test
+			   |-----scala
+			   			|-- your packaeg 
+			   					| --- your test 
+
+
+pom.xml ---> 
+
+build.gradle---> 
+
+
+a) dependencies *your project depends on which other binaries (GAV)
+b) plugins 
+c) configuration of project properties :- 
+
+
+katacoda scala playground
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
