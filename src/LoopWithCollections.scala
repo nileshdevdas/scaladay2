@@ -1,6 +1,4 @@
-
 // all collection are immutable
-
 val mylist = List(1,2,3,4,5);
 val newlist = mylist.take(4);
 for(element <- mylist){
@@ -24,3 +22,4 @@ println(mylist.length);
 println(mylist.take(3));
 println(mylist.takeRight(3));
 println(mylist.reverse);
+
